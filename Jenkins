@@ -1,0 +1,25 @@
+pipeline{
+
+agent any
+
+stages{
+stage('Compile'){
+steps{
+sh('compile')
+//}
+
+stage('Test'){
+steps{
+
+sh('Test')
+
+}
+
+stage('install'){
+sh('install')
+}
+}
+}
+
+}
+}
