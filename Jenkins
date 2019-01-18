@@ -1,25 +1,20 @@
-pipeline{
-
-agent any
-
-stages{
-stage('Compile'){
-steps{
-sh('compile')
-//}
-
-stage('Test'){
-steps{
-
-sh('Test')
-
-}
-
-stage('install'){
-sh('install')
-}
-}
-}
-
-}
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                
+            }
+        }
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
+    }
 }
